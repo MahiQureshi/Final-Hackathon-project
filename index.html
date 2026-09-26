@@ -1,0 +1,3196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blood Connect | Smart Blood Network</title>
+
+    <meta
+        name="description"
+        content="Blood Connect — a smart platform connecting donors, recipients, blood banks and camps."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-orb orb-three"></div>
+
+    <!-- =========================
+         APP
+    ========================== -->
+
+    <div class="app-shell">
+
+        <!-- =========================
+             TOP NAVIGATION
+        ========================== -->
+
+        <header class="topbar glass">
+
+            <!-- BRAND -->
+
+            <button class="brand" data-page="home" type="button">
+
+                <span class="brand-icon">
+                    ♥
+                </span>
+
+                <span class="brand-text">
+                    <strong>Blood Connect</strong>
+                    <small>Smart Blood Network</small>
+                </span>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <button
+                    class="nav-link active"
+                    data-page="home"
+                    type="button"
+                >
+                    <span>⌂</span>
+                    Dashboard
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-page="emergency"
+                    type="button"
+                >
+                    <span>✚</span>
+                    Emergency
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-page="camps"
+                    type="button"
+                >
+                    <span>♟</span>
+                    Camps
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-page="search"
+                    type="button"
+                >
+                    <span>⌕</span>
+                    Smart Search
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-page="banks"
+                    type="button"
+                >
+                    <span>+</span>
+                    Blood Banks
+                </button>
+
+            </nav>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="topbar-actions">
+
+                <select
+                    id="languageSelect"
+                    class="language-select"
+                    aria-label="Language"
+                >
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="mr">मराठी</option>
+                </select>
+
+
+                <button
+                    id="profileButton"
+                    class="profile-button"
+                    type="button"
+                    aria-label="Open profile"
+                >
+                    MQ
+                </button>
+
+
+                <div
+                    id="profileDropdown"
+                    class="profile-dropdown glass"
+                >
+
+                    <div class="profile-header">
+
+                        <div class="profile-avatar">
+                            MQ
+                        </div>
+
+                        <div>
+                            <strong>Blood Connect User</strong>
+                            <span>Community Member</span>
+                        </div>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        data-page="dashboard"
+                        class="profile-menu-item"
+                    >
+                        My Dashboard
+                    </button>
+
+                    <button
+                        type="button"
+                        id="clearLocalData"
+                        class="profile-menu-item danger-item"
+                    >
+                        Clear Demo Data
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- ==================================================
+                 HOME PAGE
+            =================================================== -->
+
+            <section
+                id="home"
+                class="page active"
+            >
+
+                <!-- HERO -->
+
+                <section class="hero-section">
+
+                    <div class="hero-content">
+
+                        <div class="eyebrow">
+                            <span class="status-dot"></span>
+                            SMART BLOOD NETWORK
+                        </div>
+
+                        <h1>
+                            Every Drop.
+                            <span>One Connected Network.</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Blood Connect brings donors, recipients, blood
+                            banks, camps and intelligent matching together
+                            in one simple platform.
+                        </p>
+
+
+                        <div class="hero-actions">
+
+                            <button
+                                class="primary-button"
+                                data-page="emergency"
+                                type="button"
+                            >
+                                <span>✚</span>
+                                Request Blood
+                            </button>
+
+                            <button
+                                class="secondary-button"
+                                data-page="search"
+                                type="button"
+                            >
+                                <span>⌕</span>
+                                Find a Donor
+                            </button>
+
+                        </div>
+
+
+                        <!-- HERO TRUST ITEMS -->
+
+                        <div class="hero-trust">
+
+                            <div class="trust-item">
+                                <strong>24/7</strong>
+                                <span>Emergency Access</span>
+                            </div>
+
+                            <div class="trust-divider"></div>
+
+                            <div class="trust-item">
+                                <strong>Smart</strong>
+                                <span>Blood Matching</span>
+                            </div>
+
+                            <div class="trust-divider"></div>
+
+                            <div class="trust-item">
+                                <strong>Connected</strong>
+                                <span>Blood Network</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HERO VISUAL -->
+
+                    <div class="hero-visual">
+
+                        <div class="hero-glow"></div>
+
+                        <div class="blood-network-card glass">
+
+                            <div class="network-card-top">
+
+                                <div>
+                                    <span class="mini-label">
+                                        LIVE NETWORK
+                                    </span>
+
+                                    <h3>
+                                        Blood Availability
+                                    </h3>
+                                </div>
+
+                                <span class="live-pill">
+                                    <span></span>
+                                    Live
+                                </span>
+
+                            </div>
+
+
+                            <div class="blood-level">
+
+                                <div class="blood-level-circle">
+                                    <strong>87%</strong>
+                                    <span>Network Health</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="blood-mini-stats">
+
+                                <div>
+                                    <span>Donors</span>
+                                    <strong>12,480+</strong>
+                                </div>
+
+                                <div>
+                                    <span>Requests</span>
+                                    <strong>2,841</strong>
+                                </div>
+
+                                <div>
+                                    <span>Hospitals</span>
+                                    <strong>186</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="network-status">
+
+                                <span class="status-dot green"></span>
+
+                                <span>
+                                    Network operating normally
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FLOATING CARDS -->
+
+                        <div class="floating-card floating-card-one glass">
+
+                            <span class="floating-icon red">
+                                ♥
+                            </span>
+
+                            <div>
+                                <strong>O+ Needed</strong>
+                                <small>Emergency Request</small>
+                            </div>
+
+                            <span class="pulse-arrow">
+                                →
+                            </span>
+
+                        </div>
+
+
+                        <div class="floating-card floating-card-two glass">
+
+                            <span class="floating-icon purple">
+                                HLA
+                            </span>
+
+                            <div>
+                                <strong>HLA Match</strong>
+                                <small>98.4% compatibility</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     QUICK ACCESS
+                ========================== -->
+
+                <section class="quick-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            <span class="section-kicker">
+                                QUICK ACCESS
+                            </span>
+
+                            <h2>
+                                What do you need today?
+                            </h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-grid">
+
+                        <button
+                            class="quick-card glass"
+                            data-page="emergency"
+                            type="button"
+                        >
+
+                            <div class="quick-icon emergency-icon">
+                                ✚
+                            </div>
+
+                            <div>
+                                <h3>Need Blood</h3>
+                                <p>
+                                    Create an emergency blood request.
+                                </p>
+                            </div>
+
+                            <span class="card-arrow">→</span>
+
+                        </button>
+
+
+                        <button
+                            class="quick-card glass"
+                            data-page="search"
+                            type="button"
+                        >
+
+                            <div class="quick-icon donor-icon">
+                                ♥
+                            </div>
+
+                            <div>
+                                <h3>Find a Donor</h3>
+                                <p>
+                                    Search compatible blood donors.
+                                </p>
+                            </div>
+
+                            <span class="card-arrow">→</span>
+
+                        </button>
+
+
+                        <button
+                            class="quick-card glass"
+                            data-page="camps"
+                            type="button"
+                        >
+
+                            <div class="quick-icon camp-icon">
+                                ◉
+                            </div>
+
+                            <div>
+                                <h3>Join a Camp</h3>
+                                <p>
+                                    Register for nearby donation camps.
+                                </p>
+                            </div>
+
+                            <span class="card-arrow">→</span>
+
+                        </button>
+
+
+                        <button
+                            class="quick-card glass"
+                            data-page="banks"
+                            type="button"
+                        >
+
+                            <div class="quick-icon bank-icon">
+                                +
+                            </div>
+
+                            <div>
+                                <h3>Blood Banks</h3>
+                                <p>
+                                    Explore connected blood banks.
+                                </p>
+                            </div>
+
+                            <span class="card-arrow">→</span>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     HOW IT WORKS
+                ========================== -->
+
+                <section class="how-section">
+
+                    <div class="section-heading centered">
+
+                        <span class="section-kicker">
+                            SIMPLE. FAST. CONNECTED.
+                        </span>
+
+                        <h2>
+                            How Blood Connect Works
+                        </h2>
+
+                        <p>
+                            From a blood requirement to a potential match,
+                            everything stays connected.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-flow">
+
+                        <div class="process-step glass">
+
+                            <div class="step-number">
+                                01
+                            </div>
+
+                            <div class="step-icon">
+                                ◉
+                            </div>
+
+                            <h3>
+                                Create Request
+                            </h3>
+
+                            <p>
+                                Tell us the blood group, location and
+                                urgency.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-line"></div>
+
+
+                        <div class="process-step glass">
+
+                            <div class="step-number">
+                                02
+                            </div>
+
+                            <div class="step-icon">
+                                ⌕
+                            </div>
+
+                            <h3>
+                                Smart Matching
+                            </h3>
+
+                            <p>
+                                The system identifies relevant donors,
+                                banks and resources.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-line"></div>
+
+
+                        <div class="process-step glass">
+
+                            <div class="step-number">
+                                03
+                            </div>
+
+                            <div class="step-icon">
+                                ♥
+                            </div>
+
+                            <h3>
+                                Connect
+                            </h3>
+
+                            <p>
+                                Connect the recipient with the available
+                                blood source.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-line"></div>
+
+
+                        <div class="process-step glass">
+
+                            <div class="step-number">
+                                04
+                            </div>
+
+                            <div class="step-icon">
+                                ✓
+                            </div>
+
+                            <h3>
+                                Save a Life
+                            </h3>
+
+                            <p>
+                                Complete the donation or blood support
+                                process.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     UNIQUENESS
+                ========================== -->
+
+                <section class="uniqueness-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            <span class="section-kicker">
+                                WHAT MAKES IT DIFFERENT
+                            </span>
+
+                            <h2>
+                                Built for smarter blood coordination.
+                            </h2>
+
+                            <p>
+                                Blood Connect combines traditional blood
+                                discovery with intelligent matching and
+                                emergency coordination.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-grid">
+
+                        <!-- HLA -->
+
+                        <article class="feature-card glass hla-feature">
+
+                            <div class="feature-top">
+
+                                <div class="feature-icon hla-icon">
+                                    HLA
+                                </div>
+
+                                <span class="feature-badge">
+                                    Advanced
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                HLA Typing & Matching
+                            </h3>
+
+                            <p>
+                                Search and compare HLA markers when
+                                compatibility beyond basic blood groups
+                                is required.
+                            </p>
+
+
+                            <div class="feature-points">
+
+                                <span>
+                                    ✓ HLA-A
+                                </span>
+
+                                <span>
+                                    ✓ HLA-B
+                                </span>
+
+                                <span>
+                                    ✓ HLA-C
+                                </span>
+
+                                <span>
+                                    ✓ HLA-DR
+                                </span>
+
+                            </div>
+
+
+                            <button
+                                class="feature-button"
+                                data-page="search"
+                                type="button"
+                            >
+                                Explore HLA Matching →
+                            </button>
+
+                        </article>
+
+
+                        <!-- EMERGENCY -->
+
+                        <article class="feature-card glass emergency-feature">
+
+                            <div class="feature-top">
+
+                                <div class="feature-icon emergency-feature-icon">
+                                    ✚
+                                </div>
+
+                                <span class="feature-badge urgent">
+                                    24/7
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Emergency Blood System
+                            </h3>
+
+                            <p>
+                                Create urgent requests with hospital,
+                                blood group, contact and location
+                                information.
+                            </p>
+
+
+                            <div class="emergency-preview">
+
+                                <div>
+                                    <span class="mini-label">
+                                        ACTIVE REQUEST
+                                    </span>
+
+                                    <strong>
+                                        O+ Blood Required
+                                    </strong>
+                                </div>
+
+                                <span class="urgent-status">
+                                    URGENT
+                                </span>
+
+                            </div>
+
+
+                            <button
+                                class="feature-button emergency-button"
+                                data-page="emergency"
+                                type="button"
+                            >
+                                Create Emergency Request →
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     NEARBY BLOOD BANKS
+                ========================== -->
+
+                <section class="banks-preview-section">
+
+                    <div class="section-heading split-heading">
+
+                        <div>
+
+                            <span class="section-kicker">
+                                CONNECTED NETWORK
+                            </span>
+
+                            <h2>
+                                Nearby Blood Banks
+                            </h2>
+
+                            <p>
+                                Explore available blood services and
+                                submit requests directly.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            class="outline-button"
+                            data-page="banks"
+                            type="button"
+                        >
+                            View All Banks →
+                        </button>
+
+                    </div>
+
+
+                    <div class="bank-preview-grid">
+
+                        <article class="bank-card glass">
+
+                            <div class="bank-card-header">
+
+                                <div class="bank-logo">
+                                    +
+                                </div>
+
+                                <span class="available-pill">
+                                    Available
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                City Blood Centre
+                            </h3>
+
+                            <p>
+                                Nagpur • Central Zone
+                            </p>
+
+                            <div class="bank-info-row">
+
+                                <span>
+                                    🩸 Multiple Groups
+                                </span>
+
+                                <span>
+                                    2.4 km
+                                </span>
+
+                            </div>
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="City Blood Centre"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                        </article>
+
+
+                        <article class="bank-card glass">
+
+                            <div class="bank-card-header">
+
+                                <div class="bank-logo teal">
+                                    +
+                                </div>
+
+                                <span class="available-pill">
+                                    Available
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Lifeline Blood Bank
+                            </h3>
+
+                            <p>
+                                Nagpur • North Zone
+                            </p>
+
+                            <div class="bank-info-row">
+
+                                <span>
+                                    🩸 O+ / B+
+                                </span>
+
+                                <span>
+                                    4.8 km
+                                </span>
+
+                            </div>
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="Lifeline Blood Bank"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                        </article>
+
+
+                        <article class="bank-card glass">
+
+                            <div class="bank-card-header">
+
+                                <div class="bank-logo purple">
+                                    +
+                                </div>
+
+                                <span class="available-pill">
+                                    Connected
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Hope Blood Centre
+                            </h3>
+
+                            <p>
+                                Nagpur • East Zone
+                            </p>
+
+                            <div class="bank-info-row">
+
+                                <span>
+                                    🩸 All Groups
+                                </span>
+
+                                <span>
+                                    7.1 km
+                                </span>
+
+                            </div>
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="Hope Blood Centre"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     DONOR / RECIPIENT
+                ========================== -->
+
+                <section class="journey-section">
+
+                    <div class="journey-card donor-journey glass">
+
+                        <div class="journey-icon">
+                            ♥
+                        </div>
+
+                        <div class="journey-content">
+
+                            <span class="section-kicker">
+                                FOR DONORS
+                            </span>
+
+                            <h2>
+                                Your donation can become someone's
+                                tomorrow.
+                            </h2>
+
+                            <p>
+                                Discover nearby donation camps, respond
+                                to blood needs and stay connected with
+                                the community.
+                            </p>
+
+                            <button
+                                class="secondary-button"
+                                data-page="camps"
+                                type="button"
+                            >
+                                Explore Camps →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="journey-card recipient-journey glass">
+
+                        <div class="journey-icon recipient-icon">
+                            ✚
+                        </div>
+
+                        <div class="journey-content">
+
+                            <span class="section-kicker">
+                                FOR RECIPIENTS
+                            </span>
+
+                            <h2>
+                                Find the right blood support faster.
+                            </h2>
+
+                            <p>
+                                Search donors, discover connected blood
+                                banks and create emergency requests.
+                            </p>
+
+                            <button
+                                class="primary-button"
+                                data-page="emergency"
+                                type="button"
+                            >
+                                Request Blood →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- ==================================================
+                 DASHBOARD PAGE
+            =================================================== -->
+
+            <section
+                id="dashboard"
+                class="page"
+            >
+
+                <div class="page-header">
+
+                    <div>
+                        <span class="section-kicker">
+                            PERSONAL OVERVIEW
+                        </span>
+
+                        <h1>
+                            Your Dashboard
+                        </h1>
+
+                        <p>
+                            Track registrations, emergency requests and
+                            blood support activity.
+                        </p>
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        data-page="emergency"
+                        type="button"
+                    >
+                        + New Request
+                    </button>
+
+                </div>
+
+
+                <!-- DASHBOARD STATS -->
+
+                <div class="dashboard-stats">
+
+                    <div class="dashboard-stat glass">
+
+                        <span class="stat-icon blue">
+                            ◉
+                        </span>
+
+                        <div>
+                            <span>
+                                Camp Registrations
+                            </span>
+
+                            <strong id="dashboardCampCount">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-stat glass">
+
+                        <span class="stat-icon red">
+                            ✚
+                        </span>
+
+                        <div>
+                            <span>
+                                Emergency Requests
+                            </span>
+
+                            <strong id="dashboardEmergencyCount">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-stat glass">
+
+                        <span class="stat-icon teal">
+                            +
+                        </span>
+
+                        <div>
+                            <span>
+                                Blood Bank Requests
+                            </span>
+
+                            <strong id="dashboardBankCount">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-stat glass">
+
+                        <span class="stat-icon purple">
+                            ♥
+                        </span>
+
+                        <div>
+                            <span>
+                                Network Activity
+                            </span>
+
+                            <strong id="dashboardActivityCount">
+                                0
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD CONTENT -->
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-panel glass">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span class="section-kicker">
+                                    RECENT ACTIVITY
+                                </span>
+
+                                <h2>
+                                    Your latest actions
+                                </h2>
+                            </div>
+
+                        </div>
+
+                        <div id="activityList" class="activity-list">
+
+                            <!-- JavaScript inserts activity -->
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-panel glass">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span class="section-kicker">
+                                    QUICK ACTIONS
+                                </span>
+
+                                <h2>
+                                    Get started
+                                </h2>
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-actions">
+
+                            <button
+                                class="dashboard-action"
+                                data-page="emergency"
+                                type="button"
+                            >
+                                <span class="action-icon red">
+                                    ✚
+                                </span>
+
+                                <div>
+                                    <strong>
+                                        Emergency Request
+                                    </strong>
+
+                                    <small>
+                                        Need blood urgently?
+                                    </small>
+                                </div>
+
+                                <span>→</span>
+                            </button>
+
+
+                            <button
+                                class="dashboard-action"
+                                data-page="search"
+                                type="button"
+                            >
+                                <span class="action-icon blue">
+                                    ⌕
+                                </span>
+
+                                <div>
+                                    <strong>
+                                        Smart Search
+                                    </strong>
+
+                                    <small>
+                                        Find compatible sources.
+                                    </small>
+                                </div>
+
+                                <span>→</span>
+                            </button>
+
+
+                            <button
+                                class="dashboard-action"
+                                data-page="camps"
+                                type="button"
+                            >
+                                <span class="action-icon green">
+                                    ◉
+                                </span>
+
+                                <div>
+                                    <strong>
+                                        Donation Camps
+                                    </strong>
+
+                                    <small>
+                                        Register for a camp.
+                                    </small>
+                                </div>
+
+                                <span>→</span>
+                            </button>
+
+
+                            <button
+                                class="dashboard-action"
+                                data-page="banks"
+                                type="button"
+                            >
+                                <span class="action-icon teal">
+                                    +
+                                </span>
+
+                                <div>
+                                    <strong>
+                                        Blood Banks
+                                    </strong>
+
+                                    <small>
+                                        Explore connected banks.
+                                    </small>
+                                </div>
+
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 EMERGENCY PAGE
+            =================================================== -->
+
+            <section
+                id="emergency"
+                class="page"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <span class="section-kicker emergency-kicker">
+                            EMERGENCY BLOOD SYSTEM
+                        </span>
+
+                        <h1>
+                            Create Blood Request
+                        </h1>
+
+                        <p>
+                            Provide accurate details so the network can
+                            identify relevant support.
+                        </p>
+
+                    </div>
+
+                    <div class="emergency-status-card glass">
+
+                        <span class="status-dot red"></span>
+
+                        <div>
+                            <strong>
+                                Emergency Network
+                            </strong>
+
+                            <small>
+                                Available 24/7
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="emergency-layout">
+
+                    <!-- FORM -->
+
+                    <form
+                        id="emergencyForm"
+                        class="form-card glass"
+                    >
+
+                        <div class="form-card-header">
+
+                            <div>
+                                <span class="section-kicker">
+                                    REQUEST DETAILS
+                                </span>
+
+                                <h2>
+                                    Patient Information
+                                </h2>
+                            </div>
+
+                            <span class="required-label">
+                                * Required
+                            </span>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <!-- NAME -->
+
+                            <div class="form-group full-width">
+
+                                <label for="emergencyName">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="emergencyName"
+                                    name="name"
+                                    placeholder="Enter patient's full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- AGE -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyAge">
+                                    Age *
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="emergencyAge"
+                                    name="age"
+                                    min="1"
+                                    max="120"
+                                    placeholder="Age"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- BLOOD GROUP -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyBloodGroup">
+                                    Blood Group *
+                                </label>
+
+                                <select
+                                    id="emergencyBloodGroup"
+                                    name="bloodGroup"
+                                    required
+                                >
+                                    <option value="">
+                                        Select blood group
+                                    </option>
+
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+
+                            </div>
+
+
+                            <!-- UNITS -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyUnits">
+                                    Units Required *
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="emergencyUnits"
+                                    name="units"
+                                    min="1"
+                                    max="20"
+                                    value="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyPhone">
+                                    Contact Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="emergencyPhone"
+                                    name="phone"
+                                    placeholder="10-digit mobile number"
+                                    pattern="[0-9]{10}"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyEmail">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="emergencyEmail"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                >
+
+                            </div>
+
+
+                            <!-- HOSPITAL -->
+
+                            <div class="form-group full-width">
+
+                                <label for="emergencyHospital">
+                                    Hospital Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="emergencyHospital"
+                                    name="hospital"
+                                    placeholder="Enter hospital name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- LOCATION -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyLocation">
+                                    Location / City *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="emergencyLocation"
+                                    name="location"
+                                    placeholder="e.g. Nagpur"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- URGENCY -->
+
+                            <div class="form-group">
+
+                                <label for="emergencyUrgency">
+                                    Urgency Level *
+                                </label>
+
+                                <select
+                                    id="emergencyUrgency"
+                                    name="urgency"
+                                    required
+                                >
+                                    <option value="">
+                                        Select urgency
+                                    </option>
+
+                                    <option value="Critical">
+                                        Critical — Immediately
+                                    </option>
+
+                                    <option value="High">
+                                        High — Within a few hours
+                                    </option>
+
+                                    <option value="Normal">
+                                        Normal — Within 24 hours
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- HLA OPTION -->
+
+                        <div class="toggle-card">
+
+                            <div>
+
+                                <strong>
+                                    Add HLA Typing Information
+                                </strong>
+
+                                <p>
+                                    Optional — useful for advanced
+                                    compatibility searches.
+                                </p>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    id="emergencyHlaToggle"
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- HLA FIELDS -->
+
+                        <div
+                            id="emergencyHlaFields"
+                            class="hla-fields"
+                        >
+
+                            <div class="form-group">
+
+                                <label for="hlaA">
+                                    HLA-A
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="hlaA"
+                                    name="hlaA"
+                                    placeholder="e.g. A*02"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="hlaB">
+                                    HLA-B
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="hlaB"
+                                    name="hlaB"
+                                    placeholder="e.g. B*07"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="hlaC">
+                                    HLA-C
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="hlaC"
+                                    name="hlaC"
+                                    placeholder="e.g. C*07"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="hlaDR">
+                                    HLA-DR
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="hlaDR"
+                                    name="hlaDR"
+                                    placeholder="e.g. DRB1*15"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- NOTES -->
+
+                        <div class="form-group">
+
+                            <label for="emergencyNotes">
+                                Additional Information
+                            </label>
+
+                            <textarea
+                                id="emergencyNotes"
+                                name="notes"
+                                rows="4"
+                                placeholder="Add any relevant information..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- CONSENT -->
+
+                        <label class="checkbox-row">
+
+                            <input
+                                type="checkbox"
+                                id="emergencyConsent"
+                                required
+                            >
+
+                            <span>
+                                I confirm that the information provided
+                                is accurate and can be used to coordinate
+                                blood support.
+                            </span>
+
+                        </label>
+
+
+                        <button
+                            class="primary-button large-button"
+                            type="submit"
+                        >
+                            Submit Emergency Request
+                            <span>→</span>
+                        </button>
+
+                    </form>
+
+
+                    <!-- SIDE INFORMATION -->
+
+                    <aside class="emergency-sidebar">
+
+                        <div class="info-card glass">
+
+                            <div class="info-icon red">
+                                !
+                            </div>
+
+                            <h3>
+                                In an immediate emergency
+                            </h3>
+
+                            <p>
+                                Contact the hospital emergency department
+                                and local emergency services while using
+                                Blood Connect to coordinate blood support.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-card glass">
+
+                            <span class="section-kicker">
+                                WHAT HAPPENS NEXT
+                            </span>
+
+                            <h3>
+                                Request workflow
+                            </h3>
+
+
+                            <div class="mini-workflow">
+
+                                <div>
+                                    <span>01</span>
+                                    <p>
+                                        Request submitted
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <span>02</span>
+                                    <p>
+                                        Sources identified
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <span>03</span>
+                                    <p>
+                                        Connections coordinated
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="info-card glass">
+
+                            <span class="section-kicker">
+                                PRIVACY
+                            </span>
+
+                            <h3>
+                                Your information
+                            </h3>
+
+                            <p>
+                                This browser prototype stores submitted
+                                information locally on your device.
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- REQUEST HISTORY -->
+
+                <section class="history-section">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <span class="section-kicker">
+                                YOUR REQUESTS
+                            </span>
+
+                            <h2>
+                                Emergency Request History
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="emergencyHistory"
+                        class="history-list"
+                    >
+
+                        <!-- JavaScript inserts requests -->
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- ==================================================
+                 CAMPS PAGE
+            =================================================== -->
+
+            <section
+                id="camps"
+                class="page"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            DONATION NETWORK
+                        </span>
+
+                        <h1>
+                            Blood Donation Camps
+                        </h1>
+
+                        <p>
+                            Discover upcoming and currently active
+                            donation camps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CAMP TABS -->
+
+                <div class="tab-bar glass">
+
+                    <button
+                        class="tab-button active"
+                        data-camp-tab="upcoming"
+                        type="button"
+                    >
+                        Upcoming Camps
+                    </button>
+
+                    <button
+                        class="tab-button"
+                        data-camp-tab="ongoing"
+                        type="button"
+                    >
+                        Ongoing Camps
+                    </button>
+
+                </div>
+
+
+                <!-- UPCOMING CAMPS -->
+
+                <div
+                    id="upcomingCamps"
+                    class="camp-grid camp-tab-content active"
+                >
+
+                    <!-- CAMP 1 -->
+
+                    <article
+                        class="camp-card glass"
+                        data-camp-type="upcoming"
+                    >
+
+                        <div class="camp-card-top">
+
+                            <span class="camp-status upcoming">
+                                Upcoming
+                            </span>
+
+                            <span class="camp-date">
+                                04 OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-icon-large">
+                            ♥
+                        </div>
+
+
+                        <h3>
+                            Community Blood Drive
+                        </h3>
+
+                        <p class="camp-organizer">
+                            Blood Connect Community Initiative
+                        </p>
+
+
+                        <div class="camp-details">
+
+                            <span>
+                                ◷ 09:00 AM – 04:00 PM
+                            </span>
+
+                            <span>
+                                ◉ Nagpur
+                            </span>
+
+                            <span>
+                                ♟ Open for all eligible donors
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-footer">
+
+                            <span class="spots">
+                                82 spots available
+                            </span>
+
+                            <button
+                                class="register-btn"
+                                data-camp-name="Community Blood Drive"
+                                data-camp-date="04 October 2026"
+                                data-camp-location="Nagpur"
+                                type="button"
+                            >
+                                Register
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CAMP 2 -->
+
+                    <article
+                        class="camp-card glass"
+                        data-camp-type="upcoming"
+                    >
+
+                        <div class="camp-card-top">
+
+                            <span class="camp-status upcoming">
+                                Upcoming
+                            </span>
+
+                            <span class="camp-date">
+                                10 OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-icon-large green-icon">
+                            +
+                        </div>
+
+
+                        <h3>
+                            Lifeline Donation Camp
+                        </h3>
+
+                        <p class="camp-organizer">
+                            Lifeline Blood Bank
+                        </p>
+
+
+                        <div class="camp-details">
+
+                            <span>
+                                ◷ 10:00 AM – 05:00 PM
+                            </span>
+
+                            <span>
+                                ◉ North Nagpur
+                            </span>
+
+                            <span>
+                                ♟ Registration required
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-footer">
+
+                            <span class="spots">
+                                46 spots available
+                            </span>
+
+                            <button
+                                class="register-btn"
+                                data-camp-name="Lifeline Donation Camp"
+                                data-camp-date="10 October 2026"
+                                data-camp-location="North Nagpur"
+                                type="button"
+                            >
+                                Register
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CAMP 3 -->
+
+                    <article
+                        class="camp-card glass"
+                        data-camp-type="upcoming"
+                    >
+
+                        <div class="camp-card-top">
+
+                            <span class="camp-status upcoming">
+                                Upcoming
+                            </span>
+
+                            <span class="camp-date">
+                                18 OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-icon-large purple-icon">
+                            H
+                        </div>
+
+
+                        <h3>
+                            HLA & Blood Awareness Camp
+                        </h3>
+
+                        <p class="camp-organizer">
+                            Community Health Network
+                        </p>
+
+
+                        <div class="camp-details">
+
+                            <span>
+                                ◷ 08:30 AM – 03:00 PM
+                            </span>
+
+                            <span>
+                                ◉ Central Nagpur
+                            </span>
+
+                            <span>
+                                ♟ HLA awareness available
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-footer">
+
+                            <span class="spots">
+                                35 spots available
+                            </span>
+
+                            <button
+                                class="register-btn"
+                                data-camp-name="HLA & Blood Awareness Camp"
+                                data-camp-date="18 October 2026"
+                                data-camp-location="Central Nagpur"
+                                type="button"
+                            >
+                                Register
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ONGOING CAMPS -->
+
+                <div
+                    id="ongoingCamps"
+                    class="camp-grid camp-tab-content"
+                >
+
+                    <!-- ONGOING CAMP 1 -->
+
+                    <article
+                        class="camp-card glass ongoing-card"
+                        data-camp-type="ongoing"
+                    >
+
+                        <div class="camp-card-top">
+
+                            <span class="camp-status ongoing">
+                                ● Ongoing
+                            </span>
+
+                            <span class="camp-date">
+                                TODAY
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-icon-large red-icon">
+                            ♥
+                        </div>
+
+
+                        <h3>
+                            City Hospital Blood Camp
+                        </h3>
+
+                        <p class="camp-organizer">
+                            City Hospital & Community Team
+                        </p>
+
+
+                        <div class="camp-details">
+
+                            <span>
+                                ◷ 09:00 AM – 06:00 PM
+                            </span>
+
+                            <span>
+                                ◉ Central Nagpur
+                            </span>
+
+                            <span>
+                                ♟ Walk-in accepted
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-footer">
+
+                            <span class="spots live-spots">
+                                Registration open
+                            </span>
+
+                            <button
+                                class="register-btn"
+                                data-camp-name="City Hospital Blood Camp"
+                                data-camp-date="Today"
+                                data-camp-location="Central Nagpur"
+                                type="button"
+                            >
+                                Register
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ONGOING CAMP 2 -->
+
+                    <article
+                        class="camp-card glass ongoing-card"
+                        data-camp-type="ongoing"
+                    >
+
+                        <div class="camp-card-top">
+
+                            <span class="camp-status ongoing">
+                                ● Ongoing
+                            </span>
+
+                            <span class="camp-date">
+                                TODAY
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-icon-large teal-icon">
+                            +
+                        </div>
+
+
+                        <h3>
+                            Hope Community Camp
+                        </h3>
+
+                        <p class="camp-organizer">
+                            Hope Blood Centre
+                        </p>
+
+
+                        <div class="camp-details">
+
+                            <span>
+                                ◷ 10:00 AM – 05:00 PM
+                            </span>
+
+                            <span>
+                                ◉ East Nagpur
+                            </span>
+
+                            <span>
+                                ♟ All eligible donors welcome
+                            </span>
+
+                        </div>
+
+
+                        <div class="camp-footer">
+
+                            <span class="spots live-spots">
+                                Registration open
+                            </span>
+
+                            <button
+                                class="register-btn"
+                                data-camp-name="Hope Community Camp"
+                                data-camp-date="Today"
+                                data-camp-location="East Nagpur"
+                                type="button"
+                            >
+                                Register
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 SMART SEARCH PAGE
+            =================================================== -->
+
+            <section
+                id="search"
+                class="page"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            INTELLIGENT DISCOVERY
+                        </span>
+
+                        <h1>
+                            Smart Search
+                        </h1>
+
+                        <p>
+                            Search by blood group or explore advanced
+                            HLA compatibility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SEARCH TABS -->
+
+                <div class="tab-bar glass">
+
+                    <button
+                        class="tab-button active"
+                        data-search-tab="blood"
+                        type="button"
+                    >
+                        🩸 Blood Group
+                    </button>
+
+                    <button
+                        class="tab-button"
+                        data-search-tab="hla"
+                        type="button"
+                    >
+                        HLA Typing
+                    </button>
+
+                </div>
+
+
+                <!-- BLOOD SEARCH -->
+
+                <div
+                    id="bloodSearchPanel"
+                    class="search-panel active"
+                >
+
+                    <div class="search-form-card glass">
+
+                        <div class="search-card-heading">
+
+                            <div class="search-big-icon blood-search-icon">
+                                ♥
+                            </div>
+
+                            <div>
+
+                                <span class="section-kicker">
+                                    BLOOD GROUP SEARCH
+                                </span>
+
+                                <h2>
+                                    Find compatible blood sources
+                                </h2>
+
+                                <p>
+                                    Search available donors and connected
+                                    blood resources.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <form id="bloodSearchForm">
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="searchBloodGroup">
+                                        Blood Group *
+                                    </label>
+
+                                    <select
+                                        id="searchBloodGroup"
+                                        required
+                                    >
+                                        <option value="">
+                                            Select blood group
+                                        </option>
+
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="searchComponent">
+                                        Component
+                                    </label>
+
+                                    <select id="searchComponent">
+
+                                        <option value="Whole Blood">
+                                            Whole Blood
+                                        </option>
+
+                                        <option value="RBC">
+                                            Red Blood Cells
+                                        </option>
+
+                                        <option value="Platelets">
+                                            Platelets
+                                        </option>
+
+                                        <option value="Plasma">
+                                            Plasma
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="searchLocation">
+                                        Location
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="searchLocation"
+                                        placeholder="Enter city or area"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="primary-button"
+                                type="submit"
+                            >
+                                Search Blood Network
+                                <span>⌕</span>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HLA SEARCH -->
+
+                <div
+                    id="hlaSearchPanel"
+                    class="search-panel"
+                >
+
+                    <div class="search-form-card glass hla-search-card">
+
+                        <div class="search-card-heading">
+
+                            <div class="search-big-icon hla-search-icon">
+                                HLA
+                            </div>
+
+                            <div>
+
+                                <span class="section-kicker">
+                                    ADVANCED MATCHING
+                                </span>
+
+                                <h2>
+                                    HLA Typing Search
+                                </h2>
+
+                                <p>
+                                    Enter available HLA markers to explore
+                                    potential compatibility.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <form id="hlaSearchForm">
+
+                            <div class="hla-search-grid">
+
+                                <div class="form-group">
+
+                                    <label for="searchHlaA">
+                                        HLA-A
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="searchHlaA"
+                                        placeholder="e.g. A*02"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="searchHlaB">
+                                        HLA-B
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="searchHlaB"
+                                        placeholder="e.g. B*07"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="searchHlaC">
+                                        HLA-C
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="searchHlaC"
+                                        placeholder="e.g. C*07"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="searchHlaDR">
+                                        HLA-DR
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="searchHlaDR"
+                                        placeholder="e.g. DRB1*15"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="hla-notice">
+
+                                <span>ⓘ</span>
+
+                                <p>
+                                    HLA matching is shown as a prototype
+                                    compatibility workflow. Clinical
+                                    decisions require validated laboratory
+                                    data and professional assessment.
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                class="primary-button hla-button"
+                                type="submit"
+                            >
+                                Find Potential Matches
+                                <span>⌕</span>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULTS -->
+
+                <section class="results-section">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <span class="section-kicker">
+                                SEARCH RESULTS
+                            </span>
+
+                            <h2>
+                                Available Matches
+                            </h2>
+
+                        </div>
+
+                        <span
+                            id="resultCount"
+                            class="result-count"
+                        >
+                            0 results
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="searchResults"
+                        class="search-results"
+                    >
+
+                        <div class="empty-state glass">
+
+                            <div class="empty-icon">
+                                ⌕
+                            </div>
+
+                            <h3>
+                                Start a search
+                            </h3>
+
+                            <p>
+                                Select a blood group or enter HLA markers
+                                to explore potential matches.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+            <!-- ==================================================
+                 BLOOD BANKS PAGE
+            =================================================== -->
+
+            <section
+                id="banks"
+                class="page"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            CONNECTED BLOOD SERVICES
+                        </span>
+
+                        <h1>
+                            Nearby Blood Banks
+                        </h1>
+
+                        <p>
+                            Explore connected blood banks and submit
+                            support requests.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="secondary-button"
+                        data-page="search"
+                        type="button"
+                    >
+                        Search Blood →
+                    </button>
+
+                </div>
+
+
+                <!-- BANK FILTERS -->
+
+                <div class="filter-bar glass">
+
+                    <div class="filter-search">
+
+                        <span>⌕</span>
+
+                        <input
+                            type="text"
+                            id="bankSearchInput"
+                            placeholder="Search blood banks..."
+                        >
+
+                    </div>
+
+
+                    <select id="bankAreaFilter">
+
+                        <option value="all">
+                            All Areas
+                        </option>
+
+                        <option value="central">
+                            Central
+                        </option>
+
+                        <option value="north">
+                            North
+                        </option>
+
+                        <option value="east">
+                            East
+                        </option>
+
+                        <option value="west">
+                            West
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BANK GRID -->
+
+                <div
+                    id="bankGrid"
+                    class="bank-grid"
+                >
+
+                    <!-- BANK 1 -->
+
+                    <article
+                        class="full-bank-card glass"
+                        data-bank-name="City Blood Centre"
+                        data-bank-area="central"
+                    >
+
+                        <div class="full-bank-top">
+
+                            <div class="large-bank-logo">
+                                +
+                            </div>
+
+                            <div>
+
+                                <span class="available-pill">
+                                    Available
+                                </span>
+
+                                <h3>
+                                    City Blood Centre
+                                </h3>
+
+                                <p>
+                                    Central Nagpur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-stat-grid">
+
+                            <div>
+                                <span>
+                                    Blood Groups
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Distance
+                                </span>
+
+                                <strong>
+                                    2.4 km
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Active
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-actions">
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="City Blood Centre"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                            <button
+                                class="small-outline-button bank-details-button"
+                                data-bank-details="City Blood Centre"
+                                type="button"
+                            >
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BANK 2 -->
+
+                    <article
+                        class="full-bank-card glass"
+                        data-bank-name="Lifeline Blood Bank"
+                        data-bank-area="north"
+                    >
+
+                        <div class="full-bank-top">
+
+                            <div class="large-bank-logo teal">
+                                +
+                            </div>
+
+                            <div>
+
+                                <span class="available-pill">
+                                    Available
+                                </span>
+
+                                <h3>
+                                    Lifeline Blood Bank
+                                </h3>
+
+                                <p>
+                                    North Nagpur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-stat-grid">
+
+                            <div>
+                                <span>
+                                    Blood Groups
+                                </span>
+
+                                <strong>
+                                    6
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Distance
+                                </span>
+
+                                <strong>
+                                    4.8 km
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Active
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-actions">
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="Lifeline Blood Bank"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                            <button
+                                class="small-outline-button bank-details-button"
+                                data-bank-details="Lifeline Blood Bank"
+                                type="button"
+                            >
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BANK 3 -->
+
+                    <article
+                        class="full-bank-card glass"
+                        data-bank-name="Hope Blood Centre"
+                        data-bank-area="east"
+                    >
+
+                        <div class="full-bank-top">
+
+                            <div class="large-bank-logo purple">
+                                +
+                            </div>
+
+                            <div>
+
+                                <span class="available-pill">
+                                    Connected
+                                </span>
+
+                                <h3>
+                                    Hope Blood Centre
+                                </h3>
+
+                                <p>
+                                    East Nagpur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-stat-grid">
+
+                            <div>
+                                <span>
+                                    Blood Groups
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Distance
+                                </span>
+
+                                <strong>
+                                    7.1 km
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Active
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-actions">
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="Hope Blood Centre"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                            <button
+                                class="small-outline-button bank-details-button"
+                                data-bank-details="Hope Blood Centre"
+                                type="button"
+                            >
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BANK 4 -->
+
+                    <article
+                        class="full-bank-card glass"
+                        data-bank-name="Care Blood Services"
+                        data-bank-area="west"
+                    >
+
+                        <div class="full-bank-top">
+
+                            <div class="large-bank-logo green">
+                                +
+                            </div>
+
+                            <div>
+
+                                <span class="available-pill">
+                                    Connected
+                                </span>
+
+                                <h3>
+                                    Care Blood Services
+                                </h3>
+
+                                <p>
+                                    West Nagpur
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-stat-grid">
+
+                            <div>
+                                <span>
+                                    Blood Groups
+                                </span>
+
+                                <strong>
+                                    7
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Distance
+                                </span>
+
+                                <strong>
+                                    9.3 km
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Active
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="bank-actions">
+
+                            <button
+                                class="small-button bank-request-button"
+                                data-bank="Care Blood Services"
+                                type="button"
+                            >
+                                Request Blood
+                            </button>
+
+                            <button
+                                class="small-outline-button bank-details-button"
+                                data-bank-details="Care Blood Services"
+                                type="button"
+                            >
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="site-footer">
+
+            <div class="footer-brand">
+
+                <span class="brand-icon">
+                    ♥
+                </span>
+
+                <div>
+
+                    <strong>
+                        Blood Connect
+                    </strong>
+
+                    <span>
+                        Smart blood coordination platform
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                Prototype interface • Designed for connected blood
+                coordination
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- ==================================================
+         GLOBAL MODAL
+    =================================================== -->
+
+    <div
+        id="modal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-backdrop"></div>
+
+        <div
+            class="modal-card glass"
+            role="dialog"
+            aria-modal="true"
+        >
+
+            <button
+                id="modalClose"
+                class="modal-close"
+                type="button"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div id="modalContent">
+
+                <!-- JavaScript inserts modal content -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         TOAST NOTIFICATIONS
+    =================================================== -->
+
+    <div
+        id="toastContainer"
+        class="toast-container"
+    >
+        <!-- JavaScript inserts notifications -->
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
